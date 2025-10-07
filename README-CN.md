@@ -1,11 +1,13 @@
 <p align="center">
-  <a href="https://merger.hxco.dev">
-    <img alt="merger" src="https://ae01.alicdn.com/kf/HTB1M9ondUKF3KVjSZFE760ExFXae.png" height="75">
+  <a href="https://merger.huangxin.org">
+    <img alt="merger" src="https://edge.huangxin.org/images/2024/04/404313540.png" height="75">
   </a>
 </p>
 
 <p align="center">
-合并你的二维码。就是现在。
+<a href="https://qr.huangxin.org">qr.huangxin.org</a>
+<br>
+轻量，集成的二维码支付界面
 </p>
 <p align="center">
 语言：<a href="/README.md">English 英语</a> / <strong>中文</strong>
@@ -13,35 +15,43 @@
 
 
 <p align="center">
-<a href="https://github.com/hifocus/merger/releases"><img alt="Version" src="https://img.shields.io/github/release/hifocus/merger/all.svg?style=flat-square"/></a>
-<a href="https://github.com/hifocus/merger/graphs/contributors"><img alt="Contributors" src="https://img.shields.io/github/contributors/hifocus/merger.svg?style=flat-square"/></a>
-<a href="https://github.com/hifocus/merger/stargazers"><img alt="Stargazers" src="https://img.shields.io/github/stars/hifocus/merger.svg?style=flat-square"/></a>
-<a href="https://github.com/hifocus/merger/blob/master/LICENSE"><img alt="License" src="https://img.shields.io/github/license/hifocus/merger.svg?style=flat-square"/></a>
-<a href="https://www.jsdelivr.com/package/gh/hifocus/merger"><img alt="jsDelivr" src="https://data.jsdelivr.com/v1/package/gh/hifocus/merger/badge"/></a>
+<a href="https://github.com/qr-merger/merger/releases"><img alt="Version" src="https://img.shields.io/github/release/qr-merger/merger/all.svg?style=flat-square"/></a>
+<a href="https://github.com/qr-merger/merger/graphs/contributors"><img alt="Contributors" src="https://img.shields.io/github/contributors/qr-merger/merger.svg?style=flat-square"/></a>
+<a href="https://github.com/qr-merger/merger/stargazers"><img alt="Stargazers" src="https://img.shields.io/github/stars/qr-merger/merger.svg?style=flat-square"/></a>
+<a href="https://github.com/qr-merger/merger/blob/master/LICENSE"><img alt="License" src="https://img.shields.io/github/license/qr-merger/merger.svg?style=flat-square"/></a>
+<a href="https://www.jsdelivr.com/package/gh/qr-merger/merger"><img alt="jsDelivr" src="https://data.jsdelivr.com/v1/package/gh/qr-merger/merger/badge"/></a>
 </p>
 
-在[这里](https://github.com/hifocus/merger/issues/4)提交你的 merger 站点以供[展示](https://merger.hxco.dev/#/?id=%e5%85%b6%e4%bb%96%e6%bc%94%e7%a4%ba%e7%ab%99%e7%82%b9)
-
-
-## 相关链接
-
-- [说明文档](https://merger.castle.freejishu.com)
-- [演示站点](https://demo.qrcdn.com)
-- [其他演示站点](https://merger.hxco.dev/#/?id=%e5%85%b6%e4%bb%96%e6%bc%94%e7%a4%ba%e7%ab%99%e7%82%b9)
-- [提交问题](https://github.com/hifocus/merger/issues)
-- [合并请求](https://github.com/hifocus/merger/pulls)
-- [感谢](https://merger.hxco.dev/#/?id=credit)
-
-> 说明文档已为中国大陆网络环境优化
+在[这里](https://github.com/qr-merger/merger/issues/4)提交你的 merger 站点以供[展示](https://merger.huangxin.org/#/?id=%e5%85%b6%e4%bb%96%e6%bc%94%e7%a4%ba%e7%ab%99%e7%82%b9)
 
 ## 特性
 
-- 最少的请求数，最快的速度。
-- 详尽的代码注释，方便二次开发。
-- 结合实际使用场景为每一种支付方式单独设计的展示样式。
-- 高度可定制化，页面上一切内容均可通过预设的 Javascript 代码更改。无需任何编程技巧。
-- 所有静态文件均默认通过开源 CDN [jsDelivr](https://www.jsdelivr.com) 分发。
+- 支持微信、支付宝和PayPal。
+  - 当扫描URL二维码时，在微信（显示支付码）或支付宝（重定向）内引导用户进行支付。
+- 支持多语言，有两种模式：`donate`（捐赠）和`payment`（支付）。
+- 提供 Gulp 支持，增强开发者体验并支持 JAMStack 部署。
+- 静态文件托管于 [cdnjs.com](https://cdnjs.com/libraries/merger)，可作为独立的HTML文件运行。
+
+## 使用方法
+
+### 使用 NPM 和 Gulp（推荐）
+```bash
+git clone https://github.com/qr-merger/merger
+cd merger
+
+# 编辑 merger.html
+
+pnpm i
+pnpm build
+```
+优化后的版本将出现在`/build`目录中。适用于 JAMStack 平台，如 [CloudFlare Pages](https://pages.cloudflare.com)、[Vercel](https://vercel.com) 和 [Netlify](https://www.netlify.com)。
+
+### 独立使用
+
+1. 下载 [merger.html](https://github.com/qr-merger/merger/blob/master/merger.html)。
+2. 编辑其内容。
+3. 根据喜好部署HTML文件。
 
 ## 开源许可证
 
-[GNU General Public License v3.0](https://github.com/hifocus/merger/blob/master/LICENSE)
+[GNU General Public License v3.0](https://github.com/qr-merger/merger/blob/master/LICENSE)
